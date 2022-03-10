@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var jogador = "Nathan";
+        var vidas = 3;
+        var municao = 100;
+        var pontos = 0;
+        var tiros = 1500;
+        var acertos = 750;
+        var mediaAcertos = ( acertos / tiros ) * 100;
+        const max = 10;
+        const min = 5;
+        var soma = max + min;
+
+        
+
+        document.write("<p style='color:red; font-size:32px;'>Nome do jogador:  " +  jogador + "</p>");
+        document.write("<p style='color:red; font-size:32px;'>Vidas do jogador: " + vidas + "</p>");
+        document.write("<p style='color:red; font-size:32px;'>Munição do jogador: " + municao + "</p>");
+        document.write("<p style='color:red; font-size:32px;'> Pontos do jogador: " + (pontos + (vidas * 10))+ "</p>");
+        document.write("<p style='color:red; font-size:32px;'> Media de acertos: " + mediaAcertos + "%"+ "</p>");
+        document.write("minha string: " +  soma)
+
+        
+    </script>
+    
+</body>
+</html>
