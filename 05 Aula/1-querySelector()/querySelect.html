@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="querySelector.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="minhaDiv">
+            <h1>Alterar o texto do primeiro elemento "p" da div</h1>
+            <p>Este é o primeiro elemento na minha div</p>
+            <p>Este é o segundo elemento na minha div</p>
+
+            <button onclick="alterarElemento()">Clique aqui</button>
+        </div>
+        <hr>
+
+        <div id="minhaDiv1">
+            <h1>Alterar o texto do primeiro elemento "p" da classe="senai"</h1>
+            <p>Este é o primeiro elemento na minha div</p>
+            <p class="senai">Este é o segundo elemento na minha div</p>
+            <p class="senai">Este é o terceiro elemento na minha div</p>
+
+            <button onclick="alterarClasse()">Clique aqui</button>
+        </div>
+        <hr>
+
+        <div id="minhaDiv2">
+            <h1>Alterar o texto do primeiro elemento "p" com id="meuID"</h1>
+            <p class="senai">Este é o primeiro elemento na minha div</p>
+            <p class="senai">Este é o segundo elemento na minha div</p>
+            <p class="senai" id="meuID">Este é o terceiro elemento na minha div</p>
+
+            <button onclick="alterarID()">Clique aqui</button>
+        </div>
+        <hr>
+
+        <div id="minhaDiv3">
+            <h1>Adicionar uma borda vermelha ao primeiro elemento "a" que tem o atributo target</h1>
+            <p>Três links abaixo: </p>
+            <p><a href="https://www.senaipr.org.br" target="_blank">SENAI</a></p>
+            <p><a href="https://fiepr.org.br" >FIEP</a></p>
+            <p><a href="https://www.ielpr.org.br" target="_blank">IEL</a></p>
+
+            <button onclick="alterarTarget()">Clique aqui</button>
+        </div>
+    </div>
+
+
+    <script src="querySelect.js"></script>
+    
+</body>
+</html>
