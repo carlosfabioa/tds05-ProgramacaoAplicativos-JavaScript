@@ -1,0 +1,38 @@
+body{
+    background-color: #888888;
+}
+
+#container{
+    position: absolute;
+    width: 30%;
+    left:50%;
+    transform: translate(-50%,0);
+    background-color: white;
+    top:10%;
+    border-radius: 1em;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: .5em;
+    padding: 1.5em;
+}
+
+.grid-container > div{
+    background-color: #dfdfdf;
+    text-align: center;
+    padding: 1.5em 0;
+    border-radius: .3em;
+    box-shadow: .2em .2em #888888;
+}
+
+div .display{
+    grid-column: 1 / span 4;
+    height: 2em;
+    text-align: right;
+    padding-right: 1em;
+    padding-bottom: 0;
+    padding-top: 2.5em;
+}
+
