@@ -1,0 +1,83 @@
+:root{
+    --color-cabecalho:rgb(142, 216, 221);
+    --color-cabecalho-dark: rgb(120, 198, 204);
+    --color-aside-dark: rgb(76, 78, 78);;
+}
+
+*{
+    margin:0;
+}
+
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 5% 95%;
+    background-color: white;
+    height: 600px;
+    
+}
+
+/*Cabeçalho*/
+.grid-container header{
+    grid-column: 1 / span 2;
+}
+
+.grid-cabecalho{
+    display:grid;
+    grid-template-columns: 15% 100%;
+    
+}
+
+.grid-cabecalho .logo{
+    text-align: center;
+    background-color:var(--color-cabecalho-dark);
+    padding: .5em;
+}
+
+.grid-cabecalho .usuario{
+    background-color:var(--color-cabecalho);
+    padding: .5em;
+}
+
+/*barra lateral*/
+aside{
+    padding: 1em;
+    background-color: var(--color-aside-dark);
+}
+
+
+/*Conteudo principal*/
+.grid-principal{
+    display:grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 10% 90%;
+}
+
+.grid-principal .usuarios{
+    grid-column: 1 / span 2;
+    
+}
+
+.grid-principal aside{
+    background-color: azure;
+}
+
+.grid-usuarios{
+    display:grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 10% 90%;
+}
+
+.grid-usuarios .lista-usuarios{
+    grid-column: 1 / span 6;
+    
+}
+
+
+#icone > div{
+    background-color:white;
+    height: .2em;
+    width: 1.5em;
+    margin: .3em;
+}
