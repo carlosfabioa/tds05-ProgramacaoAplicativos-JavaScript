@@ -14,23 +14,37 @@
                 <div class="logo">
                     SENAI
                 </div>
-                <div id="icone" class="usuario">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="barra-titulo">
+                    <div id="icone" class="usuario">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        Fulano Junior
+                    </div>
                 </div>
-            </header>
+            </header> <!--Fim do cabeçalho-->
 
             <aside>
-                <div class="logo">Fulano de Tal</div>
+                <div class="logo">Fulano de Tal <br> online</div>
                 <div class="menu">MENU</div>
-                <div>Usuários</div>
-            </aside>
+                <div class="usuarios">Usuários</div>
+            </aside> <!--Fim da barra lateral-->
 
             <section class="grid-principal">
-                <div class="usuarios"><strong>Usuários</strong> Gerenciamento de usuários do sistema</div>
+                <div class="titulo">
+                    <div class="esquerda">
+                        <strong>Usuários</strong> Gerenciamento de usuários do sistema
+                    </div>
+                    <div class="direita">
+                        Home > usuarios
+                    </div>
+                </div>
                 <div class="grid-usuarios">
-                    <div class="lista-usuarios">Lista de usuários</div>
+                    <div class="lista-usuarios">
+                        <hr>
+                        Lista de usuários</div>
                     <div>Foto</div>
                     <div>Nome</div>
                     <div>E-mail</div>
@@ -40,7 +54,41 @@
                     
                 </div>
                 <aside>
-                    barra lateral direita
+                    <div class="novos-usuarios">
+                        <div>novos usuarios</div>
+                        <div>administradores</div>
+                    </div>
+                    <hr>
+                    <div class="formulario">
+                        <h3>Novo usuários</h3>
+                        <form action="" id="form">
+                            <label for="nome">Nome </label>
+                            <input type="text" id="nome">
+                            <label for="genero">Gênero</label>
+                            <input type="radio" name="genero" id="genero" value="Masculino">
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" name="genero" id="genero" value="Feminino">
+                            <label for="feminino">Feminino</label>
+                            <label for="nascimento">Nascimento</label>
+                            <input type="date" id="nascimento">
+                            <label for="pais">País</label>
+                            <select name="pais" id="pais">
+                                <option value="">Argentina</option>
+                                <option value="" selected>Brasil</option>
+                                <option value="">Paraguai</option>
+                                <option value="">Uruguai</option>
+                            </select>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha">
+                            <label for="foto">Foto</label>
+                            <input type="file" name="foto" id="foto">
+                            <input type="checkbox" name="admin" id="admin">
+                            <label for="admin">Administrador</label>
+
+                        </form>
+                    </div>
                 </aside>
 
             </section>

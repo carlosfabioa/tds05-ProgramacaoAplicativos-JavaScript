@@ -27,7 +27,10 @@ e, com os seguinte métodos:
      virarDireita: () => console.log("Estou virando a Direita")
  }
 
+
+
  const botao = document.querySelector("#botao");
+ 
 
  document.addEventListener("submit", function(e) {
      e.preventDefault();
@@ -36,8 +39,6 @@ e, com os seguinte métodos:
 
 
  function criarObjeto(){
-     carro1 = new Carro();
-     carro2  
      carro.cor = document.querySelector("#cor").value;
      
  }
