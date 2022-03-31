@@ -139,7 +139,10 @@ aside .nome, .online, small{
     margin-top: 1em;
     text-align: right;
     font-size: 0.9em;
+}
 
+.direita small{
+    color: var(--color-font);
 }
 
 .direita img{
@@ -155,6 +158,9 @@ aside .nome, .online, small{
 .esquerda span{
     font-size: 1.5em;
     color:black;
+}
+.esquerda small{
+    color: var(--color-font);
 }
 
 .grid-principal aside{
@@ -224,6 +230,11 @@ aside .nome, .online, small{
     font-weight: bold;
 }
 
+.novos-usuarios .num1{
+    color: white;
+
+}
+
 .novos-usuarios .user{
     background-color: rgb(33, 180, 33);
     padding: 1em;
@@ -239,7 +250,11 @@ aside .nome, .online, small{
 
 /*Formulários*/
 .formulario h3{
-    margin: .8em;
+   margin: .8em;
+   border-radius: .3em;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #888888;
+  
     
 }
 
